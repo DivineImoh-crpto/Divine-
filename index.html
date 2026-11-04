@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The official personal page of Divine Imoh.">
+  <title>Divine Imoh | Official Page</title>
+  <style>
+    :root { --gold: #d6b35b; --bg: #0d0d0f; --panel: #171719; --muted: #b8b5ad; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: #f7f4ed;
+      font-family: Arial, Helvetica, sans-serif; line-height: 1.6;
+    }
+    .wrap { width: min(920px, 92%); margin: auto; }
+    header { padding: 26px 0; border-bottom: 1px solid #302a1c; }
+    .brand { color: var(--gold); font-weight: 800; letter-spacing: 3px; }
+    .hero { text-align: center; padding: 76px 18px 54px; }
+    .avatar {
+      width: 132px; height: 132px; border-radius: 50%; margin: 0 auto 22px;
+      display: grid; place-items: center; border: 2px solid var(--gold);
+      background: #24221d; color: var(--gold); font-size: 42px; font-weight: 700;
+      overflow: hidden;
+    }
+    .avatar img { width: 100%; height: 100%; object-fit: cover; }
+    h1 { font-size: clamp(2.2rem, 7vw, 4rem); margin: 0; letter-spacing: 2px; }
+    .tagline { color: var(--gold); font-weight: 600; margin: 8px 0 14px; }
+    .intro { max-width: 590px; color: var(--muted); margin: 0 auto 26px; }
+    .btn {
+      display: inline-block; text-decoration: none; padding: 13px 22px;
+      border-radius: 999px; font-weight: 700; margin: 6px;
+    }
+    .primary { color: #17130a; background: var(--gold); }
+    .secondary { color: var(--gold); border: 1px solid var(--gold); }
+    section { background: var(--panel); border: 1px solid #292721; border-radius: 18px; padding: 26px; margin: 18px 0; }
+    h2 { color: var(--gold); margin-top: 0; letter-spacing: 1px; }
+    .muted { color: var(--muted); }
+    .socials { display: flex; flex-wrap: wrap; gap: 10px; }
+    .socials a { color: var(--gold); border: 1px solid #5b4a26; padding: 9px 14px; border-radius: 999px; text-decoration: none; }
+    footer { color: var(--muted); text-align: center; padding: 30px 10px 42px; font-size: .9rem; }
+    @media (max-width: 520px) { .hero { padding-top: 54px; } section { padding: 21px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap brand">DIVINE IMOH</div>
+  </header>
+
+  <main class="wrap">
+    <div class="hero">
+      <div class="avatar" aria-label="Profile photo placeholder">DI</div>
+      <h1>DIVINE IMOH</h1>
+      <p class="tagline">Creator · Entrepreneur</p>
+      <p class="intro">Welcome to my personal page. This is where you can learn more about me, explore my work and get in touch.</p>
+      <a class="btn primary" href="https://wa.me/2349161087988" target="_blank" rel="noopener">Chat with me on WhatsApp</a>
+    </div>
+
+    <section>
+      <h2>About Me</h2>
+      <p class="muted">Add a short biography here: who you are, what you do and what you would like visitors to know about you.</p>
+    </section>
+
+    <section>
+      <h2>My Work</h2>
+      <h3>Divine Express</h3>
+      <p class="muted">Discover my customized T-shirt and personalized design business. Add product photos, services and ordering details here.</p>
+      <a class="btn secondary" href="https://wa.me/2349161087988" target="_blank" rel="noopener">Enquire about my work</a>
+    </section>
+
+    <section>
+      <h2>Find Me Online</h2>
+      <p class="muted">Replace these placeholders with your actual social media profile links before publishing.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram profile">Instagram — add link</a>
+        <a href="#" aria-label="Facebook profile">Facebook — add link</a>
+        <a href="#" aria-label="TikTok profile">TikTok — add link</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Divine Imoh. All rights reserved.</footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
