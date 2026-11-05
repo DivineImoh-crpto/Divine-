@@ -3,133 +3,147 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The official personal page of Divine Imoh.">
+  <meta name="description" content="The official personal portfolio of Divine Imoh — creative design, photo editing and visual branding.">
   <title>Divine Imoh | Official Page</title>
   <style>
-    :root { --gold: #d6b35b; --bg: #0d0d0f; --panel: #171719; --muted: #b8b5ad; }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0; background: var(--bg); color: #f7f4ed;
-      font-family: Arial, Helvetica, sans-serif; line-height: 1.6;
-    }
-    .wrap { width: min(920px, 92%); margin: auto; }
-    header { padding: 26px 0; border-bottom: 1px solid #302a1c; }
-    .brand { color: var(--gold); font-weight: 800; letter-spacing: 3px; }
-    .hero { text-align: center; padding: 76px 18px 54px; }
-    .avatar {
-      width: 132px; height: 132px; border-radius: 50%; margin: 0 auto 22px;
-      display: grid; place-items: center; border: 2px solid var(--gold);
-      background: #24221d; color: var(--gold); font-size: 42px; font-weight: 700;
-      overflow: hidden;
-    }
-    .avatar img { width: 100%; height: 100%; object-fit: cover; }
-    h1 { font-size: clamp(2.2rem, 7vw, 4rem); margin: 0; letter-spacing: 2px; }
-    .tagline { color: var(--gold); font-weight: 600; margin: 8px 0 14px; }
-    .intro { max-width: 590px; color: var(--muted); margin: 0 auto 26px; }
-    .btn {
-      display: inline-block; text-decoration: none; padding: 13px 22px;
-      border-radius: 999px; font-weight: 700; margin: 6px;
-    }
-    .primary { color: #17130a; background: var(--gold); }
-    .secondary { color: var(--gold); border: 1px solid var(--gold); }
-    section { background: var(--panel); border: 1px solid #292721; border-radius: 18px; padding: 26px; margin: 18px 0; }
-    h2 { color: var(--gold); margin-top: 0; letter-spacing: 1px; }
-    .muted { color: var(--muted); }
-    .socials { display: flex; flex-wrap: wrap; gap: 10px; }
-    .socials a { color: var(--gold); border: 1px solid #5b4a26; padding: 9px 14px; border-radius: 999px; text-decoration: none; }
-    footer { color: var(--muted); text-align: center; padding: 30px 10px 42px; font-size: .9rem; }
-    @media (max-width: 520px) { .hero { padding-top: 54px; } section { padding: 21px; } }
+    :root { --gold:#d6b35b; --bg:#0d0d0f; --panel:#171719; --muted:#b8b5ad; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:#f7f4ed; font-family:Arial,Helvetica,sans-serif; line-height:1.6; }
+    .wrap { width:min(1000px,92%); margin:auto; }
+    header { padding:26px 0; border-bottom:1px solid #302a1c; }
+    .brand { color:var(--gold); font-weight:800; letter-spacing:3px; }
+    .hero { text-align:center; padding:65px 18px 48px; }
+    .avatar { width:132px; height:132px; border-radius:50%; margin:0 auto 22px; border:2px solid var(--gold); overflow:hidden; background:#24221d; }
+    .avatar img { width:100%; height:100%; object-fit:cover; }
+    h1 { font-size:clamp(2.2rem,7vw,4rem); margin:0; letter-spacing:2px; }
+    .tagline { color:var(--gold); font-weight:600; margin:8px 0 14px; }
+    .intro { max-width:620px; color:var(--muted); margin:0 auto 24px; }
+    .btn { display:inline-block; text-decoration:none; padding:12px 21px; border-radius:999px; font-weight:700; margin:6px; }
+    .primary { color:#17130a; background:var(--gold); }
+    .secondary { color:var(--gold); border:1px solid var(--gold); }
+    section { background:var(--panel); border:1px solid #292721; border-radius:18px; padding:26px; margin:18px 0; }
+    h2 { color:var(--gold); margin:0 0 14px; letter-spacing:1px; }
+    h3 { color:#f7f4ed; margin-bottom:6px; }
+    .muted { color:var(--muted); }
+    .gallery { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+    .work-card { overflow:hidden; border:1px solid #3a3325; border-radius:14px; background:#101012; }
+    .work-card img { display:block; width:100%; height:280px; object-fit:cover; background:#222; }
+    .work-copy { padding:13px 15px 15px; }
+    .category { color:var(--gold); text-transform:uppercase; font-size:.72rem; letter-spacing:1.2px; font-weight:700; }
+    .work-copy p { color:var(--muted); margin:5px 0 0; font-size:.93rem; }
+    .socials { display:flex; flex-wrap:wrap; gap:10px; }
+    .socials a { color:var(--gold); border:1px solid #5b4a26; padding:9px 14px; border-radius:999px; text-decoration:none; }
+    footer { color:var(--muted); text-align:center; padding:30px 10px 42px; font-size:.9rem; }
+    @media(max-width:620px) { .hero {padding-top:48px;} section{padding:21px;} .gallery{grid-template-columns:1fr;} .work-card img{height:auto; max-height:440px; object-fit:contain;} }
   </style>
 </head>
 <body>
-  <header>
-    <div class="wrap brand">DIVINE IMOH</div>
-  </header>
-
+  <header><div class="wrap brand">DIVINE IMOH</div></header>
   <main class="wrap">
     <div class="hero">
       <div class="avatar"><img src="profile.jpg" alt="Portrait of Divine Imoh"></div>
       <h1>DIVINE IMOH</h1>
       <p class="tagline">Creator · Entrepreneur</p>
-      <p class="intro">Welcome to my personal page. This is where you can learn more about me, explore my work and get in touch.</p>
+      <p class="intro">Welcome to my creative space. Explore my designs, photo edits, visual ideas and the projects I’m building.</p>
       <a class="btn primary" href="https://wa.me/2349161087988" target="_blank" rel="noopener">Chat with me on WhatsApp</a>
     </div>
 
     <section>
       <h2>About Me</h2>
-      <p class="muted">
-I'm Divine Imoh — a creative mind, digital creator and entrepreneur with a passion for turning ideas into reality.
-</p>
-
-<p class="muted">
-I believe creativity is more than just having ideas; it's about bringing those ideas to life through innovation, design and expression. My interests span graphic design, photo editing, visual branding, promotional flyers, digital content creation and personalized fashion.
-</p>
-
-<p class="muted">
-Through my creative journey, I've worked on professional business advertisements, event flyers, customized T-shirt designs, personal branding and visual storytelling.
-</p>
-
-<p class="muted">
-I'm also building <strong>Divine Express</strong>, a creative brand focused on customized T-shirts, personalized names, logos and unique designs.
-</p>
-
-<p class="muted">
-My vision is simple: to create meaningful work, build a recognizable brand and turn creativity into something valuable.
-</p>
-
-<p><strong>I create. I innovate. I build. And this is only the beginning.</strong></p>
+      <p class="muted">I’m Divine Imoh — a creative mind, digital creator and aspiring entrepreneur with a passion for turning ideas into reality.</p>
+      <p class="muted">I enjoy bringing ideas to life through graphic design, photo editing, visual branding, promotional flyers, digital content and personalized fashion. My approach is to combine imagination with attention to detail, creating visuals that communicate clearly and leave a memorable impression.</p>
+      <p class="muted">My projects include business advertisements, event and birthday flyers, portrait enhancements, photo compositions, logo concepts and customized design ideas.</p>
+      <p class="muted">I’m also building <strong>Divine Express</strong>, a creative brand focused on customized T-shirts, personalized names, logos and unique designs.</p>
+      <p class="muted">My vision is to keep learning, grow my skills, build recognizable brands and turn creativity into meaningful work.</p>
+      <p><strong>I create. I innovate. I build. And this is only the beginning.</strong></p>
     </section>
 
     <section>
-      
-<h2>My Work</h2>
+      <h2>My Work</h2>
+      <p class="muted">A selection of creative projects across portrait editing, flyer design, brand identity and photo composition.</p>
+      <div class="gallery">
 
-<p class="muted">
-Creativity, innovation and meaningful designs. Explore some of the creative fields I work in.
-</p>
+      <article class="work-card">
+        <img src="portfolio-images/portrait-edit-01.png" alt="Portrait Editing: Professional portrait enhancement and presentation." loading="lazy">
+        <div class="work-copy">
+          <span class="category">Portrait Editing</span>
+          <p>Professional portrait enhancement and presentation.</p>
+        </div>
+      </article>
 
-<h3>Divine Express</h3>
-<p class="muted">
-A creative brand focused on customized T-shirts, personalized names, unique logos and designs that help people express their individuality.
-</p>
+      <article class="work-card">
+        <img src="portfolio-images/portrait-edit-02.png" alt="Portrait Editing: Creative portrait styling and background presentation." loading="lazy">
+        <div class="work-copy">
+          <span class="category">Portrait Editing</span>
+          <p>Creative portrait styling and background presentation.</p>
+        </div>
+      </article>
 
-<h3>Graphic Design & Advertising</h3>
-<p class="muted">
-Promotional flyers, business advertisements, event graphics and professional product presentations designed to help brands communicate and stand out.
-</p>
+      <article class="work-card">
+        <img src="portfolio-images/portrait-edit-03.png" alt="Portrait Editing: Portrait retouching and clean visual finishing." loading="lazy">
+        <div class="work-copy">
+          <span class="category">Portrait Editing</span>
+          <p>Portrait retouching and clean visual finishing.</p>
+        </div>
+      </article>
 
-<h3>Photo Editing & Creative Photography</h3>
-<p class="muted">
-Portrait enhancement, background transformations, photo manipulation and creative visual editing, with attention to detail and natural presentation.
-</p>
+      <article class="work-card">
+        <img src="portfolio-images/birthday-flyer-charis.jpg" alt="Flyer Design: Birthday flyer layout with an elegant purple-and-gold theme." loading="lazy">
+        <div class="work-copy">
+          <span class="category">Flyer Design</span>
+          <p>Birthday flyer layout with an elegant purple-and-gold theme.</p>
+        </div>
+      </article>
 
-<h3>Branding & Visual Identity</h3>
-<p class="muted">
-Creative logo concepts, business identity, personalized designs and visual presentations that give projects a distinctive identity.
-</p>
+      <article class="work-card">
+        <img src="portfolio-images/portrait-edit-04.png" alt="Portrait Editing: Portrait composition and branded presentation." loading="lazy">
+        <div class="work-copy">
+          <span class="category">Portrait Editing</span>
+          <p>Portrait composition and branded presentation.</p>
+        </div>
+      </article>
 
-<h3>Digital Content Creation</h3>
-<p class="muted">
-Creative digital content, social media visuals and promotional materials designed to communicate ideas and connect with audiences.
-</p>
+      <article class="work-card">
+        <img src="portfolio-images/birthday-design-tosin.jpg" alt="Flyer Design: Bold birthday composition with a red theme." loading="lazy">
+        <div class="work-copy">
+          <span class="category">Flyer Design</span>
+          <p>Bold birthday composition with a red theme.</p>
+        </div>
+      </article>
 
-<a class="btn secondary" href="https://wa.me/2349161087988" target="_blank" rel="noopener">Enquire about my work</a>
-      
+      <article class="work-card">
+        <img src="portfolio-images/divine-brand-logo.png" alt="Brand Identity: Divine name and crown logo concept." loading="lazy">
+        <div class="work-copy">
+          <span class="category">Brand Identity</span>
+          <p>Divine name and crown logo concept.</p>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <img src="portfolio-images/birthday-photo-composition.jpg" alt="Photo Composition: Birthday photo collage and composition." loading="lazy">
+        <div class="work-copy">
+          <span class="category">Photo Composition</span>
+          <p>Birthday photo collage and composition.</p>
+        </div>
+      </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Divine Express</h2>
+      <p class="muted">A growing creative brand for customized T-shirts, personalized names, logos and unique designs.</p>
+      <a class="btn secondary" href="https://wa.me/2349161087988" target="_blank" rel="noopener">Enquire about Divine Express</a>
     </section>
 
     <section>
       <h2>Find Me Online</h2>
-      <p class="muted">Replace these placeholders with your actual social media profile links before publishing.</p>
       <div class="socials">
-        <a
-          href="https://www.instagram.com/divi.nity31/" aria-label="Instagram profile">Instagram</a>
-        <a 
-          href="https://www.facebook.com/profile.php?id=61593063645360" aria-label="Facebook profile">Facebook</a>
-        <a href="https://www.tiktok.com/@divinityimoh?_r=1&_t=ZS-9B9MKNmEmZe" aria-label="TikTok profile">TikTok</a>
+        <a href="https://www.instagram.com/divi.nity31/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61593063645360" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.tiktok.com/@divinityimoh?_r=1&_t=ZS-9B9MKNmEmZe" target="_blank" rel="noopener">TikTok</a>
       </div>
     </section>
   </main>
-
   <footer>© <span id="year"></span> Divine Imoh. All rights reserved.</footer>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
